@@ -37,7 +37,7 @@ options.forEach(function(e){
         const compOption = getComputerOption();
         const playerOption = e.getAttribute('id');
         const result = getResult(compOption,playerOption);
-        player.setAttribute('src','/images/'+ e.getAttribute('id') +'.png');
+        player.setAttribute('src','images/'+ e.getAttribute('id') +'.png');
         computer.setAttribute('src','images/'+ compOption +'.png');
         announcement.innerHTML = result;
         setScore(result);
